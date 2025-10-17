@@ -267,7 +267,7 @@ import teamMember1 from "../assets/sur.jpg";
 import teamMember2 from "../assets/ram.jpg";
 import teamMember3 from "../assets/raj.jpg";
 import teamMember4 from "../assets/ash.jpg";
-import developerPhoto from "../assets/keshaw.jpg";
+import developerPhoto from "../assets/kes.jpg";
 import heroImage from "../assets/img-2.jpg";
 
 // --- HELPER COMPONENT (for type safety) ---
