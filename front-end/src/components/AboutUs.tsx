@@ -258,6 +258,7 @@ import {
   Mail,
   Phone,
   Code,
+  Bird,
 } from "lucide-react";
 import { Card, CardContent } from "./ui/card";
 import { Button } from "./ui/button";
@@ -314,6 +315,12 @@ const clubActivities = [
     icon: Sprout,
     title: "Tree Plantation",
     description: "Giving back to nature with our community green initiatives.",
+  },
+  {
+    icon: Bird,
+    title: "Bird Saving Initiatives",
+    description:
+      "Actively involved in saving sparrows, parrots, and other local bird species.",
   },
   {
     icon: Gamepad2,

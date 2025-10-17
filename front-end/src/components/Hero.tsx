@@ -124,6 +124,13 @@ import { motion, AnimatePresence } from "framer-motion";
 const slidesData = [
   {
     image:
+      "https://www.fitterindia.com/media/wysiwyg/Brown_Green_Modern_Started_My_Blog_YouTube_Thumbnai_jpg.jpg",
+    preTitle: "STRONGER EVERY STEP",
+    quote: "कर दिखाओ कुछ ऐसा, दुनिया करे आप जैसा।",
+    source: "Team Blues",
+  },
+  {
+    image:
       "https://images.unsplash.com/photo-1667781838690-5f32ea0ccea6?ixlib=rb-4.1.0&q=80&w=1920&auto=format&fit=crop",
     preTitle: "POWER YOUR STRIDE",
     quote: "Fit India, Hit India!",
@@ -153,8 +160,6 @@ const slidesData = [
     source: "Fitness Mantra",
   },
 ];
-
-
 
 // --- HERO SECTION ---
 export default function Hero() {
@@ -201,7 +206,6 @@ export default function Hero() {
 
   return (
     <section className="relative h-screen w-full bg-black text-white flex items-center overflow-hidden">
-    
       <div className="absolute inset-0 z-0">
         <AnimatePresence>
           <motion.img
@@ -218,7 +222,6 @@ export default function Hero() {
         {/* A more effective gradient overlay */}
         <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/40 to-transparent" />
       </div>
-     
 
       <div className="relative z-10 container mx-auto px-6 md:px-10">
         <div className="max-w-3xl">

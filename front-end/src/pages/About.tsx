@@ -1,4 +1,5 @@
 import AboutUs from "@/components/AboutUs";
+import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import { useEffect } from "react";
 
@@ -13,6 +14,7 @@ const About = ({}: Props) => {
     <div>
       <Header />
       <AboutUs />
+      <Footer />
     </div>
   );
 };
