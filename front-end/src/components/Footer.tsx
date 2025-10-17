@@ -116,7 +116,6 @@
 //     </footer>
 //   );
 // }
-
 import { useState, useEffect } from "react";
 import { Facebook, Instagram, Twitter, Mail, Phone, Users } from "lucide-react";
 
@@ -126,9 +125,9 @@ export default function Footer() {
   useEffect(() => {
     const fetchVisitorCount = async () => {
       try {
-        const response = await fetch(
-          "https://api.countapi.xyz/hit/teamblues.in/visits"
-        );
+        // ✅ Changed URL to the local proxy path
+        const response = await fetch("/api/visits");
+
         if (!response.ok) {
           throw new Error(`HTTP error! status: ${response.status}`);
         }
@@ -136,6 +135,7 @@ export default function Footer() {
         setVisitorCount(data.value);
       } catch (error) {
         console.error("Could not fetch visitor count:", error);
+        // On error, visitorCount remains null, and the counter is hidden.
       }
     };
 
@@ -198,7 +198,6 @@ export default function Footer() {
             </div>
           </div>
 
-          {/* Quick Links, Legal, and Contact sections remain the same... */}
           {/* Quick Links */}
           <div>
             <h4 className="mb-4 text-white">Quick Links</h4>
@@ -215,6 +214,7 @@ export default function Footer() {
               ))}
             </ul>
           </div>
+
           {/* Legal */}
           <div>
             <h4 className="mb-4 text-white">Legal</h4>
@@ -231,6 +231,7 @@ export default function Footer() {
               ))}
             </ul>
           </div>
+
           {/* Contact Info */}
           <div>
             <h4 className="mb-4 text-white">Contact</h4>
