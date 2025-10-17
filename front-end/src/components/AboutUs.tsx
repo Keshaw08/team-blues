@@ -268,6 +268,7 @@ import teamMember1 from "../assets/sur.jpg";
 import teamMember2 from "../assets/ram.jpg";
 import teamMember3 from "../assets/raj.jpg";
 import teamMember4 from "../assets/ash.jpg";
+import teamMember5 from "../assets/kaush.jpg";
 import developerPhoto from "../assets/kes.jpg";
 import heroImage from "../assets/img-2.jpg";
 
@@ -291,8 +292,9 @@ const teamMembers = [
     image: teamMember1,
   },
   { name: "Ramprasad Kashania", role: "Event Coordinator", image: teamMember2 },
-  { name: "Dr. Rajveer Sirohi", role: "Community Manager", image: teamMember3 },
+  { name: "Dr. Rajdeep", role: "Community Manager", image: teamMember3 },
   { name: "Ashok Sharma", role: "Yoga & Wellness Coach", image: teamMember4 },
+  { name: "Adv. Kaushal Soni", role: "Advocate", image: teamMember5 },
 ];
 
 const clubActivities = [
