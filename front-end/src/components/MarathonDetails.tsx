@@ -214,7 +214,7 @@ const raceCategories = [
     distance: "42.195 km",
     name: "Cycling Marathon",
     difficulty: "Advanced",
-    startTime: "6:45 AM",
+    startTime: "4:00 AM",
     description:
       "UCI-style rollout, helmet mandatory, support vehicle and hydration every ~7 km.",
     startPoint: "Govind Gopal Gaushala, Bagnada Inana (Nagaur)",
@@ -354,6 +354,8 @@ export default function MarathonDetails() {
                 {EVENT.kitExpo.when}
               </p>
               <p className="opacity-80">{EVENT.kitExpo.note}</p>
+              <br />
+              <p>Please confirm over call.</p>
             </CardContent>
           </Card>
 
@@ -364,6 +366,7 @@ export default function MarathonDetails() {
             </CardHeader>
             <CardContent className="text-sm text-gray-700">
               {EVENT.routeNotes}
+              <p>Please confirm over call.</p>
             </CardContent>
           </Card>
         </div>
@@ -373,7 +376,12 @@ export default function MarathonDetails() {
           <Button
             size="lg"
             className="bg-blue-600 hover:bg-blue-700 "
-           onClick={() => window.open("https://docs.google.com/forms/d/e/1FAIpQLSeNJVOjnBAlkMTV47URue1G4eU1y1UOPmgiglA11IoULqRtPw/viewform?usp=dialog", "_blank")}
+            onClick={() =>
+              window.open(
+                "https://docs.google.com/forms/d/e/1FAIpQLSeNJVOjnBAlkMTV47URue1G4eU1y1UOPmgiglA11IoULqRtPw/viewform?usp=dialog",
+                "_blank"
+              )
+            }
           >
             Register for Your Race
           </Button>
